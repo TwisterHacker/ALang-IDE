@@ -10,7 +10,7 @@ from pygments.token import Token
 
 win1 = Tk()
 win1.geometry("800x600+100+100")
-win1.title("ALang IDE 5")
+win1.title("ALang IDE 1")
 win1.minsize(width=800, height=600)
 
 # win1.iconbitmap('ico.ico')
