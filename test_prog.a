@@ -1,0 +1,30 @@
+@test program on ALang programing language
+
+_include "Files/include/inc.a";
+_include "std.lib";
+_include "math.lib";
+
+MODULE(__MainModule__);
+
+_str a equ "Hello, World!";
+_bool b equ False;
+_int c equ 10;
+_int d equ 20;
+
+FUNC user_func equ () {
+    IF (c !equ d) {
+        b equ True;
+	RETURN(b);
+    }
+    ELSE {
+	b equ False;
+	RETURN(b);
+    }
+}
+
+FUNC Main equ (){
+    _bool e equ user_func();
+    LOG(e);
+    RETURN();
+}
+
